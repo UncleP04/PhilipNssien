@@ -1,0 +1,123 @@
+.navbar{
+    transition: all 0.5s;
+    position: fixed;
+    width: 100%;
+}
+
+  h2{
+    text-transform: capitalize;
+}
+
+.talentBox{
+    width: auto;
+    height: 100vh;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    overflow: hidden;
+}
+
+.talentBox h1{
+    font-size: 4em;
+    font-weight: 500;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.image{
+  width: 100%;
+}
+
+.originalbutton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1;
+  text-decoration: none;
+  color: #000;
+  font-size: 18px;
+  border-radius: 0px;
+  width: 200px;
+  height: 40px;
+  border-top: 1px solid #000;
+  border-right: 1px solid #000;
+  border-left: 100px solid #000;
+  border-bottom: 1px solid #000;
+  transition: 0.3s;
+  overflow: hidden;
+}
+
+.originalbutton:hover {
+  border-left-width: 1px;
+}
+
+.footerbutton{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1;
+  text-decoration: none;
+  color: #000;
+  font-size: 18px;
+  border-radius: 0px;
+  width: 200px;
+  height: 40px;
+  border-top: 1px solid #FE6150;
+  border-right: 1px solid #FE6150;
+  border-left: 100px solid #FE6150;
+  border-bottom: 1px solid #FE6150;
+  transition: 0.3s;
+  overflow: hidden;
+}
+
+.footerbutton:hover{
+  border-left-width: 1px;
+}
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 375px) {
+   .talentBox h1{
+    font-size: 2em;
+   }
+
+   .innerHead{
+    flex-direction: column;
+   }
+
+}
+
+@media only screen and (min-width: 376px) and (max-width: 425px) {
+   
+    .talentBox h1{
+        font-size: 2.5em;
+       }
+
+       .innerHead{
+        flex-direction: column;
+       }
+}
+
+@media only screen and (min-width: 426px) and (max-width: 768px) {
+    .talentBox h1{
+        font-size: 4em;
+       }
+
+       .innerHead{
+        flex-direction: column;
+       }
+}
+
+
+@media only screen and (max-width: 836px) {
+    .talentBox h1 .image{
+        width: 100%;
+    }
+}
