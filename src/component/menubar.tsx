@@ -13,7 +13,7 @@ const MenuIconBar: React.FC = () => {
   return (
     <div>
       <nav className="flex w-[100%] bg-transparent justify-between align-middle py-[3%] px-[6%]">
-        <h1 className="text-white font-semibold text-[20px] font-header">P'N.</h1>
+        <h1 className="text-white font-semibold text-[20px] font-header">P/'N/.</h1>
         <button
           type="button"
           onClick={toggleMenu}
@@ -32,7 +32,7 @@ const MenuIconBar: React.FC = () => {
                     <Link href='' className={`${isOpen ? 'scale-100 duration-1000' : 'scale-0'} text-[2em] font-semibold text-black text-center self-center hover:border-b-4 border-b-black`}>Contacts</Link>
                 </li>
                 <div className={`${isOpen ? 'scale-100 duration-500' : 'scale-0'} h-[100%] w-[100%] flex-col justify-center align-middle hidden md:flex`}>
-                    <h1 className="text-[2em] font-bold font-header">Let's find and build a solution <br /> together!</h1>
+                    <h1 className="text-[2em] font-bold font-header">Lets find and build a solution <br /> together!</h1>
                     <p className="my-4 text-[23px]">
                         Connect with me an build. <br />
                         Need a project, website or any, Dm!

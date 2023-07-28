@@ -13,7 +13,7 @@ const Companies: React.FC = () => {
       <div className="flex flex-col justify-start align-middle md:p-[8%] p-4">
         <div className="">
           <h1 className="text-[2em]">
-            Companies, Communities and <br /> Groups i've worked with.
+            Companies, Communities and <br /> Groups I have worked with.
           </h1>
         </div>
         <div className="grid grid-cols-2 md:grid-cols-4 justify-center align-middle gap-[5px] mt-[5%]">

@@ -8,7 +8,7 @@ const Footer: React.FC = () => {
       <div className="grid grid-cols-1 md:grid-cols-2 justify-start align-middle md:p-[8%] p-4">
         <div className="my-[40px] md:my-auto">
           <h1 className="text-[2em] text-white">
-            let's connect an <br /> build together.
+            lets connect an <br /> build together.
           </h1>
           <button className="self-start mt-10 footerbutton">
             <Link href="/" className="text-white">

@@ -44,7 +44,7 @@ const Languges: React.FC = () => {
             <h2 className="font-header text-temp text-[1.7em] mb-6">Next.js</h2>
             <p className="text-[20px] leading-20">
               Armed with an in-depth understanding of Next.js. Leveraging
-              Next.js's powerful features, such as server-side rendering, static
+              Next.js powerful features, such as server-side rendering, static
               site generation, and API routes etc...
             </p>
           </label>
