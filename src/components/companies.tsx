@@ -3,8 +3,6 @@ import Link from "next/link";
 import "../styles/menu.css";
 import One from '../../public/Images/cash.png'
 import Two from '../../public/Images/jo.png'
-import Three from '../../public/Images/Afric.jpeg'
-import Four from '../../public/Images/Uncle.jpeg'
 import Image from "next/image";
 
 const Companies: React.FC = () => {

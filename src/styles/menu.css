@@ -46,20 +46,19 @@
   border-left: 100px solid #000;
   border-bottom: 1px solid #000;
   transition: 0.3s;
-  overflow: hidden;
 }
 
 .originalbutton:hover {
   border-left-width: 1px;
 }
 
-.footerbutton{
+.footer{
   display: flex;
   align-items: center;
   justify-content: center;
   line-height: 1;
   text-decoration: none;
-  color: #000;
+  color: #fff;
   font-size: 18px;
   border-radius: 0px;
   width: 200px;
@@ -69,19 +68,12 @@
   border-left: 100px solid #FE6150;
   border-bottom: 1px solid #FE6150;
   transition: 0.3s;
-  overflow: hidden;
+  cursor: pointer;
 }
 
-.footerbutton:hover{
+.footer:hover{
   border-left-width: 1px;
 }
-
-
-
-
-
-
-
 
 @media only screen and (max-width: 375px) {
    .talentBox h1{

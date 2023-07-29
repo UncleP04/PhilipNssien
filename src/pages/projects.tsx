@@ -1,10 +1,8 @@
-import Introduction from "../components/introduction";
-import MenuIconBar from "@/components/menubar";
-import Content from "@/components/content";
 import React from "react";
-import Languges from "@/components/languages";
-import Companies from "@/components/companies";
 import Footer from "@/components/footer";
+import MenuIconBar from "@/components/menubar";
+import Myworks from "../components/myworks";
+import WorkList from "../components/worklist";
 
 const HomePage: React.FC = () => {
   return (
@@ -13,10 +11,8 @@ const HomePage: React.FC = () => {
         <MenuIconBar />
       </div>
       <div>
-        <Introduction />
-        <Content />
-        <Languges />
-        <Companies />
+        <Myworks />
+        <WorkList />
         <Footer />
       </div>
     </div>
