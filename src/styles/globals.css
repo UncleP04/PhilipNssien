@@ -21,7 +21,6 @@ h1, button, Link{
 
 .navbar{
   transition: all 0.5s;
-  position: fixed;
   width: 100%;
 }
 
@@ -131,6 +130,7 @@ border-left-width: 1px;
 @media only screen and (max-width: 836px) {
   .talentBox h1 .image{
       width: 100%;
+      /* color: #00000010; */
   }
 }
 

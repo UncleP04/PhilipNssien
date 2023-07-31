@@ -11,9 +11,11 @@ const Content: React.FC = () => {
             Experienced Full Stack Developer with a strong track record in
             high-quality web applications, skilled in user-friendly interface
             development.
-          </h1>
-          <button className=" mt-10 py-2 px-8 border-2 border-black hover:bg-temp hover:text-white">
-              More About Me
+          </h1> 
+          <button className="mt-4">
+            <Link href="/about" className="originalbutton font-header">
+              More Me
+            </Link>
           </button>
         </div>
       </div>

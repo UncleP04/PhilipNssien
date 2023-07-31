@@ -4,9 +4,9 @@ import MenuIconBar from "@/components/menubar";
 import Myworks from "../components/myworks";
 import WorkList from "../components/worklist";
 
-const HomePage: React.FC = () => {
+const Projects: React.FC = () => {
   return (
-    <div className="w-[100%] h-screen relative">
+    <div className="w-[100%] relative">
       <div className="top-[1%] l-[5%] w-[100%]">
         <MenuIconBar />
       </div>
@@ -19,4 +19,4 @@ const HomePage: React.FC = () => {
   );
 };
 
-export default HomePage;
+export default Projects;

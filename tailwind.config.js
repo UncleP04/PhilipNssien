@@ -17,6 +17,9 @@ module.exports = {
         primary: '#cc3',
         secondary: '#261161',
         temp: '#FE6150',
+        light: "#f1e1df",
+        lighter: "rgb(238, 238, 221)",
+        darker: "#00000010"
       },
       fontFamily: {
         header: ['Acme', 'sans-serif'],

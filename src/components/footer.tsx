@@ -11,7 +11,7 @@ const Footer: React.FC = () => {
             lets connect an <br /> build together.
           </h1>
           <button>
-            <Link href="/" className="footer font-header">
+            <Link href="/about" className="footer font-header">
               More About Me
             </Link>
           </button>
@@ -24,22 +24,22 @@ const Footer: React.FC = () => {
             </h1>
             <ul>
               <li className="my-4">
-                <Link href="" className="text-white hover:text-primary">
+                <Link href="https://www.linkedin.com/in/philipnssien/" className="text-white hover:text-primary">
                   LinkedIn
                 </Link>
               </li>
               <li className="my-4">
-                <Link href="" className="text-white hover:text-primary">
+                <Link href="https://twitter.com/Nssienphilip" className="text-white hover:text-primary">
                   Twitter
                 </Link>
               </li>
               <li className="my-4">
-                <Link href="" className="text-white hover:text-primary">
-                  Facebook
+                <Link href="https://github.com/UncleP04" className="text-white hover:text-primary">
+                  Github
                 </Link>
               </li>
               <li className="my-4">
-                <Link href="" className="text-white hover:text-primary">
+                <Link href="https://www.youtube.com/channel/UCpgX6btxQ5GWMVxQhaa9KYA" className="text-white hover:text-primary">
                   Youtube
                 </Link>
               </li>

@@ -1,9 +1,10 @@
 import React from "react";
 import Image from "next/image";
-import { url } from "inspector";
+import Link from "next/link";
 
 interface ImageList {
   url: string;
+  website: string;
   header: string;
   text: string;
 }
@@ -11,31 +12,37 @@ interface ImageList {
 const WorkArray: ImageList[] = [
   {
     url: "/../public/Images/Pro1.png",
+    website: 'https://wecruitme.com/',
     header: "Wecruitme Website",
     text: "A global Human Resource and Job agency",
   },
   {
     url: "/../public/Images/Pro2.png",
+    website: 'https://officialrepublic.onrender.com/',
     header: "officialURepobliuc",
     text: "A web3 Marketing agency",
   },
   {
     url: "/../public/Images/Pro3.png",
+    website: 'https://bartcash.netlify.app/',
     header: "BartCash",
     text: "Online trade nd bater platform",
   },
   {
     url: "/../public/Images/Pro4.png",
+    website: 'https://la-boutique.vercel.app/',
     header: "La-Boutique",
     text: "Your renowned e-commerce site",
   },
   {
     url: "/../public/Images/Pro5.png",
+    website: 'https://airbnbs.vercel.app/',
     header: "airbnb",
     text: "A demo design or Airbnb",
   },
   {
     url: "/../public/Images/Pro6.png",
+    website: 'https://creednft.vercel.app/',
     header: "CreedNft Website",
     text: "Clean and simple NFT design website",
   },
@@ -54,13 +61,13 @@ const WorkList = () => {
               <Image
                 src={work.url}
                 alt="websitedesings.png"
-                width={300}
+                width={700}
                 height={200}
-                className="w-[100%] h-[100%] grayscale hover:grayscale-0 transition duration-300 hover:scale-150"
+                className="w-[100%] h-[100%] object-cover transition duration-300 hover:scale-150"
               />
             </div>
             <div className="mt-6">
-              <h1 className="text-temp text-[2em] capitalize">{work.header}</h1>
+              <Link href={work.website} className="text-temp text-[2em] capitalize font-header">{work.header}</Link>
               <h3 className="text-[1.2em]">{work.text}</h3>
             </div>
           </div>
