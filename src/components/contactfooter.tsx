@@ -1,12 +1,22 @@
-import React from "react";
+'use client'
+import React, {useEffect} from "react";
+import 'aos/dist/aos.css';
+import AOS from 'aos';
 import Link from "next/link";
 import "../styles/menu.css";
 
 const FooterContact: React.FC = () => {
+  useEffect(() => {
+    AOS.init({
+      duration: 500,
+      once: true,
+      easing: 'ease-in-out',
+    })
+  });
   return (
     <div className="w-[100%] h-auto bg-temp p-2">
       <div className="grid grid-cols-1 md:grid-cols-2 justify-start align-middle md:p-[8%] p-4">
-        <div className="my-[40px] md:my-auto">
+        <div className="my-[40px] md:my-auto" data-aos="zoom-in-up">
           <h1 className="text-[2em] text-black">
             lets connect an <br /> build together.
           </h1>
@@ -16,7 +26,7 @@ const FooterContact: React.FC = () => {
             </Link>
           </button>
         </div>
-        <div className="my-[40px] md:my-auto">
+        <div className="my-[40px] md:my-auto" data-aos="zoom-in-up">
           <div className="">
             <h1 className="text-[2em] text-black">
               <span className="text-white">Need me?</span> You can fine me in

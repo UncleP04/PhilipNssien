@@ -1,12 +1,23 @@
-import React from "react";
+'use client'
+import React, { useEffect } from "react";
 import Image from "next/image";
 import Rectangle from "../../public/Images/reg.png";
 import "../styles/menu.css";
+import 'aos/dist/aos.css';
+import AOS from 'aos';
 
 const Introduction: React.FC = () => {
+  useEffect(() => {
+    AOS.init({
+      duration: 800,
+      once: true,
+      easing: 'ease-in-out',
+    })
+  });
+
   return (
     <div className="w-fit h-full overflow-hidden flex flex-col justify-center align-middle md:pl-[15%]">
-      <div className="talentBox">
+      <div className="talentBox" data-aos="zoom-in">
         <h1>
           Versatility: defining <br />
           trait of

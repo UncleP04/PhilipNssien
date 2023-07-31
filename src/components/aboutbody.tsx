@@ -1,18 +1,28 @@
-import React from "react";
+'use client'
+import React, {useEffect} from "react";
 import Image from "next/image";
 import Screen from "../../public/Images/screen.jpg";
+import 'aos/dist/aos.css';
+import AOS from 'aos';
 
 const AboutBody = () => {
+  useEffect(() => {
+    AOS.init({
+      duration: 500,
+      once: true,
+      easing: 'ease-in-out',
+    })
+  });
   return (
     <div className="bg-white">
       <div className="p-4">
-        <h1 className="text-black text-[3em] font-bold">
+        <h1 className="text-black text-[3em] font-bold" data-aos="zoom-in-up">
           These are what Im <br />
           great at.
         </h1>
       </div>
       <section className="flex flex-row justify-between align-middle py-10">
-        <div className="w-[50%] py-[15%] hidden md:block">
+        <div className="w-[50%] py-[15%] hidden md:block" data-aos="zoom-in-up">
           <div className="w-[400px] h-[100%]">
             <Image
               src={Screen}
@@ -25,7 +35,7 @@ const AboutBody = () => {
         </div>
         <div className="md:w-[50%] w-[100%]">
           <ul className="md:w-[400px] flex flex-col gap-y-10 p-4">
-            <li>
+            <li data-aos="zoom-in">
               <h3 className="font-semibold text-temp text-[1.7em] font-header">
                 Front-End Development
               </h3>
@@ -36,7 +46,7 @@ const AboutBody = () => {
                 applications and ensure optimal user experience
               </p>
             </li>
-            <li>
+            <li data-aos="zoom-in-up">
               <h3 className="font-semibold text-temp text-[1.7em] font-header">
                 Back-End Development
               </h3>
@@ -48,7 +58,7 @@ const AboutBody = () => {
                 application performance.
               </p>
             </li>
-            <li>
+            <li data-aos="zoom-in">
               <h3 className="font-semibold text-temp text-[1.7em] font-header">
                 Databases
               </h3>
@@ -59,7 +69,7 @@ const AboutBody = () => {
                 queries, and ensure data integrity.
               </p>
             </li>
-            <li>
+            <li data-aos="zoom-in-up">
               <h3 className="font-semibold text-temp text-[1.7em] font-header">
                 TypeScript
               </h3>
@@ -75,13 +85,13 @@ const AboutBody = () => {
         </div>
       </section>
       <div className="p-4">
-        <h1 className="text-temp text-[3em] font-bold">
+        <h1 className="text-temp text-[3em] font-bold" data-aos="zoom-in-up">
           My other Tech <br />
           skills.
         </h1>
       </div>
       <section className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 justify-evenly align-middle gap-10 w-[100%] p-4 lg:px-[5%] py-10">
-        <div className="rounded-lg border-2 border-light hover:border-lighter hover:bg-darker p-4">
+        <div className="rounded-lg border-2 border-light hover:border-lighter hover:bg-darker p-4" data-aos="zoom-in">
           <h3 className="font-semibold text-temp text-[1.7em] font-header">
             Strong Programming Skills
           </h3>
@@ -91,7 +101,7 @@ const AboutBody = () => {
             Next.js,Node.js,Express,etc.
           </p>
         </div>
-        <div className="rounded-lg border-2 border-light hover:border-lighter hover:bg-darker p-4">
+        <div className="rounded-lg border-2 border-light hover:border-lighter hover:bg-darker p-4" data-aos="zoom-out">
           <h3 className="font-semibold text-temp text-[1.7em] font-header">
             Problem-Solving and Analytical Thinking
           </h3>
@@ -101,7 +111,7 @@ const AboutBody = () => {
             complex systems.
           </p>
         </div>
-        <div className="rounded-lg border-2 border-light hover:border-lighter hover:bg-darker p-4">
+        <div className="rounded-lg border-2 border-light hover:border-lighter hover:bg-darker p-4" data-aos="zoom-in-up">
           <h3 className="font-semibold text-temp text-[1.7em] font-header">
             APIs and RESTful Services
           </h3>
@@ -110,7 +120,7 @@ const AboutBody = () => {
             integrating APIs into applications.F
           </p>
         </div>
-        <div className="rounded-lg border-2 border-light hover:border-lighter hover:bg-darker p-4">
+        <div className="rounded-lg border-2 border-light hover:border-lighter hover:bg-darker p-4" data-aos="zoom-in-up">
           <h3 className="font-semibold text-temp text-[1.7em] font-header">
             Security Awerness
           </h3>
@@ -119,7 +129,7 @@ const AboutBody = () => {
             practices for secure coding.
           </p>
         </div>
-        <div className="rounded-lg border-2 border-light hover:border-lighter hover:bg-darker p-4">
+        <div className="rounded-lg border-2 border-light hover:border-lighter hover:bg-darker p-4" data-aos="zoom-in">
           <h3 className="font-semibold text-temp text-[1.7em] font-header">
             Database Management
           </h3>
@@ -128,7 +138,7 @@ const AboutBody = () => {
             that work well on various devices and screen sizes.
           </p>
         </div>
-        <div className="rounded-lg border-2 border-light hover:border-lighter hover:bg-darker p-4">
+        <div className="rounded-lg border-2 border-light hover:border-lighter hover:bg-darker p-4" data-aos="zoom-out">
           <h3 className="font-semibold text-temp text-[1.7em] font-header">
             Responsive Design
           </h3>
@@ -137,7 +147,7 @@ const AboutBody = () => {
             (MongoDB, Firebase)
           </p>
         </div>
-        <div className="rounded-lg border-2 border-light hover:border-lighter hover:bg-darker p-4">
+        <div className="rounded-lg border-2 border-light hover:border-lighter hover:bg-darker p-4" data-aos="zoom-in-up">
           <h3 className="font-semibold text-temp text-[1.7em] font-header">
             Collaboration
           </h3>
@@ -148,7 +158,7 @@ const AboutBody = () => {
             collective problem-solving.
           </p>
         </div>
-        <div className="rounded-lg border-2 border-light hover:border-lighter hover:bg-darker p-4">
+        <div className="rounded-lg border-2 border-light hover:border-lighter hover:bg-darker p-4" data-aos="zoom-in-up">
           <h3 className="font-semibold text-temp text-[1.7em] font-header">
             Time Management
           </h3>
@@ -158,7 +168,7 @@ const AboutBody = () => {
             quality work on schedule.
           </p>
         </div>
-        <div className="rounded-lg border-2 border-light hover:border-lighter hover:bg-darker p-4">
+        <div className="rounded-lg border-2 border-light hover:border-lighter hover:bg-darker p-4" data-aos="zoom-out-up">
           <h3 className="font-semibold text-temp text-[1.7em] font-header">
             Communication
           </h3>
@@ -168,7 +178,7 @@ const AboutBody = () => {
             clearly to team members and stakeholders.
           </p>
         </div>
-        <div className="rounded-lg border-2 border-light hover:border-lighter hover:bg-darker p-4">
+        <div className="rounded-lg border-2 border-light hover:border-lighter hover:bg-darker p-4" data-aos="zoom-in">
           <h3 className="font-semibold text-temp text-[1.7em] font-header">
             Organization
           </h3>
@@ -178,7 +188,7 @@ const AboutBody = () => {
             to locate resources quickly and manage complex projects effectively.
           </p>
         </div>
-        <div className="rounded-lg border-2 border-light hover:border-lighter hover:bg-darker p-4">
+        <div className="rounded-lg border-2 border-light hover:border-lighter hover:bg-darker p-4" data-aos="zoom-out-up">
           <h3 className="font-semibold text-temp text-[1.7em] font-header">
             Teamwork
           </h3>
@@ -188,7 +198,7 @@ const AboutBody = () => {
             results in increased productivity and morale.
           </p>
         </div>
-        <div className="rounded-lg border-2 border-light hover:border-lighter hover:bg-darker p-4">
+        <div className="rounded-lg border-2 border-light hover:border-lighter hover:bg-darker p-4" data-aos="zoom-out-up">
           <h3 className="font-semibold text-temp text-[1.7em] font-header">
             Orderliness
           </h3>

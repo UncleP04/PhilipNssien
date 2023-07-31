@@ -1,16 +1,24 @@
+'use client'
+import React, {useEffect} from "react";
 import Image from "next/image";
 import Link from "next/link";
-import React from "react";
-// import Dev from "../../public/Images/dev.jpg";
-// import Gamer from "../../public/Images/games.jpg";
+import 'aos/dist/aos.css';
+import AOS from 'aos';
 import "../styles/menu.css";
 import HoverImage from "./imageHover";
 
 const AboutMeHeader: React.FC = () => {
+  useEffect(() => {
+    AOS.init({
+      duration: 500,
+      once: true,
+      easing: 'ease-in-out',
+    })
+  });
   return (
     <div>
       <section className="px-4 md:px-[8%] grid justify-center align-middle gap-10 grid-cols-1 md:grid-cols-2 mt-[10%] md:mt-0 py-[5%]">
-        <div className="">
+        <div className="" data-aos="zoom-in-up">
           <h1 className="text-white text-[3em] font-bold">
             A Developer, <br />a gamer in Peace.
           </h1>
@@ -29,7 +37,7 @@ const AboutMeHeader: React.FC = () => {
             Lets Chat
           </Link>
         </div>
-        <div className="md:h-[400px] md:w-[500px] w-[100%]">
+        <div className="md:h-[400px] md:w-[500px] w-[100%]" data-aos="zoom-out-up">
             <HoverImage src1="/Images/games.jpg" src2="/Images/dev.jpg" alt="source.jpg" />
         </div>
       </section>

@@ -1,5 +1,8 @@
-import React, { useState, useRef } from "react";
+'use client'
+import React, { useState, useRef, useEffect } from "react";
 import Link from "next/link";
+import 'aos/dist/aos.css';
+import AOS from 'aos';
 import emailjs from "emailjs-com"; // Importing emailjs-com instead of '@emailjs/browser'
 
 interface FormData {
@@ -11,6 +14,13 @@ interface FormDataTwo {
 }
 
 const ContactComponent: React.FC = () => {
+  useEffect(() => {
+    AOS.init({
+      duration: 500,
+      once: true,
+      easing: 'ease-in-out',
+    })
+  });
   const [formData, setFormData] = useState<FormData>({
     tool: "",
   });
@@ -59,7 +69,7 @@ const ContactComponent: React.FC = () => {
      <div>
     <section className="w-[100%] bg-black flex flex-col md:flex-row justify-center align-middle md:px-[1%] py-8 p-4">
       <div className="mb-10 md:mb-0">
-        <div className="md:w-[50%]">
+        <div className="md:w-[50%]" data-aos="zoom-in-up">
           <h1 className="text-white text-[3em] font-bold">
             Drop a mail, Lets build together
           </h1>
@@ -81,15 +91,15 @@ const ContactComponent: React.FC = () => {
       </div>
       <div>
         <form onSubmit={handleSubmit} ref={form} className="w-[100%] flex flex-col justify-start align-middle gap-x-10">
-          <div className="w-[100%] md:w-[400px] py-4">
+          <div className="w-[100%] md:w-[400px] py-4" data-aos="zoom-in">
             <label htmlFor="name" className="text-white font-header pb-2">Name</label>
             <input type="text" name="name" pattern="[A-Za-z ]+" title="Please enter a valid name (letters and spaces only)" id="name" placeholder="Enter Your Name" className="w-[100%] p-2 rounded-md focus:outline-none text-black" required />
           </div>
-          <div className="w-[100%] md:w-[400px] py-4">
+          <div className="w-[100%] md:w-[400px] py-4" data-aos="zoom-in-up">
             <label htmlFor="email" className="text-white font-header pb-2">Email</label>
             <input type="email" name="email" id="email" placeholder="Enter Your Email" className="w-[100%] p-2 rounded-md focus:outline-none text-black" required />
           </div>
-          <div className="w-[100%] md:w-[400px] py-4">
+          <div className="w-[100%] md:w-[400px] py-4" data-aos="zoom-out">
             <label htmlFor="tool" className="text-white font-header pb-2">
               What can I do for you?
             </label>
@@ -109,7 +119,7 @@ const ContactComponent: React.FC = () => {
               <option value="option3">FullStack Development</option>
             </select>
           </div>
-          <div>
+          <div data-aos="zoom-out-up">
             <label htmlFor="time" className="text-white font-header pb-2">
               Any TimeFrame?
             </label>
@@ -130,13 +140,14 @@ const ContactComponent: React.FC = () => {
               <option value="option3">3 Month and more..</option>
             </select>
           </div>
-          <div className="w-[100%] md:w-[400px] py-4">
+          <div className="w-[100%] md:w-[400px] py-4" data-aos="zoom-in-up">
             <label htmlFor="text" className="text-white font-header pb-2">Love to hear more!</label>
             <textarea name="message" id="text" placeholder="Message here" className="w-[100%] focus:outline-none p-2 rounded-md" />
           </div>
           <button
             type="submit"
             className="py-2 px-10 text-white border-2 border-temp hover:bg-temp w-[150px]"
+            data-aos="zoom-in-up"
           >
             <Link href="/" >Submit</Link>
           </button>
