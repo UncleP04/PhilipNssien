@@ -7,7 +7,7 @@ const AboutBody = () => {
     <div className="bg-white">
       <div className="p-4">
         <h1 className="text-black text-[3em] font-bold">
-          This is what I'm <br />
+          These are what I'm <br />
           great at.
         </h1>
       </div>

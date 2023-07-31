@@ -18,7 +18,7 @@ const AboutMeHeader: React.FC = () => {
             About Me
           </h3>
           <p className="text-white text-[20px] my-7">
-            My name is Philip Nssien <br />
+            My name is <span className="text-temp font-bold uppercase font-header">Philip Nssien</span> <br />
             Experienced Full Stack Developer <br /> with a strong track record
             in <br /> high-quality web applications
           </p>

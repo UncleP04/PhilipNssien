@@ -26,7 +26,7 @@ const WorkArray: ImageList[] = [
     url: "/../public/Images/Pro3.png",
     website: 'https://bartcash.netlify.app/',
     header: "BartCash",
-    text: "Online trade nd bater platform",
+    text: "Online trade & bater platform",
   },
   {
     url: "/../public/Images/Pro4.png",
@@ -38,7 +38,7 @@ const WorkArray: ImageList[] = [
     url: "/../public/Images/Pro5.png",
     website: 'https://airbnbs.vercel.app/',
     header: "airbnb",
-    text: "A demo design or Airbnb",
+    text: "A demo design of Airbnb",
   },
   {
     url: "/../public/Images/Pro6.png",
