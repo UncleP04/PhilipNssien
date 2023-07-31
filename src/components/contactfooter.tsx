@@ -21,7 +21,7 @@ const FooterContact: React.FC = () => {
             lets connect an <br /> build together.
           </h1>
           <button>
-            <Link href="/" className="originalbutton mt-2">
+            <Link href="/" className="originalbutton mt-2 p-1">
               More About Me
             </Link>
           </button>

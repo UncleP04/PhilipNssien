@@ -4,6 +4,8 @@ import Link from "next/link";
 import "../styles/menu.css";
 import One from '../../public/Images/cash.png'
 import Two from '../../public/Images/jo.png'
+import Three from '../../public/Images/sam.jpg'
+import Four from '../../public/Images/afric.jpg'
 import Image from "next/image";
 import 'aos/dist/aos.css';
 import AOS from 'aos';
@@ -24,13 +26,13 @@ const Companies: React.FC = () => {
             Companies, Communities and <br /> Groups I have worked with.
           </h1>
         </div>
-        <div className="grid grid-cols-2 md:grid-cols-4 justify-center align-middle gap-[5px] mt-[5%]">
+        <div className="grid grid-cols-2 md:grid-cols-4 justify-center align-middle items-center gap-[5px] mt-[5%]">
             <Image 
                 src={One}
                 alt="industried.png"
                 width={300}
                 height={200}
-                className="w-[80px] h-[100px] self-center"
+                className="w-[80px] h-[100px] self-center items-center"
                 data-aos="zoom-in"
             />
              <Image 
@@ -38,23 +40,23 @@ const Companies: React.FC = () => {
                 alt="industried.png"
                 width={300}
                 height={200}
-                className="w-[50px] h-[80px] self-center"
+                className="w-[50px] h-[80px] self-center items-center"
                 data-aos="zoom-in-up"
             />
              <Image 
-                src={One}
+                src={Three}
                 alt="industried.png"
                 width={300}
                 height={200}
-                className="w-[80px] h-[100px] self-center"
+                className="w-[80px] h-[100px] self-center items-center"
                 data-aos="zoom-out"
             />
              <Image 
-                src={Two}
+                src={Four}
                 alt="industried.png"
                 width={300}
                 height={200}
-                className="w-[50px] h-[80px] self-center"
+                className="w-[50px] h-[80px] self-center items-center"
                 data-aos="zoom-out-up"
             />
         </div>

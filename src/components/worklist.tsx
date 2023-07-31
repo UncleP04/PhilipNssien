@@ -3,15 +3,11 @@ import React, {useEffect} from "react";
 import Image, { StaticImageData } from "next/image";
 import Link from "next/link";
 import 'aos/dist/aos.css';
-// import One from '/../public/Images/Pro1.png';
-// import Two from '/../public/Images/Pro2.png';
-// import Three from '/../public/Images/Pro3.png';
-// import Four from '/../public/Images/Pro4.png';
-// import Five from '/../public/Images/Pro5.png';
-// import Six from '/../public/Images/Pro6.png';
 
 interface ImageList {
+  id: number;
   url: string;
+  alt: string;
   website: string;
   header: string;
   text: string;
@@ -19,37 +15,49 @@ interface ImageList {
 
 const WorkArray: ImageList[] = [
   {
-    url:'/../public/Images/Pro1.png',
+    id: 1,
+    url:'/../public/Images/proOne.png',
+    alt: 'image1.png',
     website: 'https://wecruitme.com/',
     header: "Wecruitme Website",
     text: "A global Human Resource and Job agency",
   },
   {
-    url: '/../public/Images/Pro2.png',
+    id: 2,
+    url: '/../public/Images/ProTwo.png',
+    alt: 'image2.png',
     website: 'https://officialrepublic.onrender.com/',
     header: "officialURepobliuc",
     text: "A web3 Marketing agency",
   },
   {
-    url: "/../public/Images/Pro3.png",
+    id: 3,
+    url: "/../public/Images/ProThree.png",
+    alt: 'image3.png',
     website: 'https://bartcash.netlify.app/',
     header: "BartCash",
     text: "Online trade & bater platform",
   },
   {
-    url: "/../public/Images/Pro4.png",
+    id: 4,
+    url: "/../public/Images/ProFour.png",
+    alt: 'image4.png',
     website: 'https://la-boutique.vercel.app/',
     header: "La-Boutique",
     text: "Your renowned e-commerce site",
   },
   {
-    url: "/../public/Images/Pro5.png",
+    id: 5,
+    url: "/../public/Images/ProFive.png",
+    alt: 'image5.png',
     website: 'https://airbnbs.vercel.app/',
     header: "airbnb",
     text: "A demo design of Airbnb",
   },
   {
-    url: "/../public/Images/Pro6.png",
+    id: 6,
+    url: "/../public/Images/ProSix.png",
+    alt: 'image6.png',
     website: 'https://creednft.vercel.app/',
     header: "CreedNft Website",
     text: "Clean and simple NFT design website",
@@ -57,13 +65,6 @@ const WorkArray: ImageList[] = [
 ];
 
 const WorkList = () => {
-  // useEffect(() => {
-  //   AOS.init({
-  //     duration: 500,
-  //     once: true,
-  //     easing: 'ease-in-out',
-  //   })
-  // });
   return (
     <div>
       <section className="grid grid-cols-1 justify-center align-middle gap-10 md:px-[8%] px-4 bg-white py-[50px]">
@@ -75,7 +76,7 @@ const WorkList = () => {
             <div className="w-full h-[350px] border relative overflow-hidden">
               <Image
                 src={work.url}
-                alt="websitedesings.png"
+                alt={work.alt}
                 width={700}
                 height={300}
                 className="w-[100%] h-[100%] object-cover transition duration-300 hover:scale-150"
