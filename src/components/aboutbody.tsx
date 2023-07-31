@@ -17,8 +17,8 @@ const AboutBody = () => {
     <div className="bg-white">
       <div className="p-4">
         <h1 className="text-black text-[3em] font-bold" data-aos="zoom-in-up">
-          These are what I'm <br />
-          great at.
+          What I am <br />
+          best at.
         </h1>
       </div>
       <section className="flex flex-row justify-between align-middle py-10">
