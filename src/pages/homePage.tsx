@@ -12,7 +12,7 @@ const HomePage: React.FC = () => {
       <div className="top-[1%] l-[5%] w-[100%]">
         <MenuIconBar />
       </div>
-      <div>
+      <div className="overflow-x-hidden">
         <Introduction />
         <Content />
         <Languges />

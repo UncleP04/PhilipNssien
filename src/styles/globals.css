@@ -95,6 +95,13 @@ cursor: pointer;
 border-left-width: 1px;
 }
 
+.code{
+  background-image: linear-gradient(#000000b0, #0000007c),url(../../public/Images/code.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
 @media only screen and (max-width: 375px) {
  .talentBox h1{
   font-size: 2em;

@@ -149,7 +149,7 @@ const ContactComponent: React.FC = () => {
             className="py-2 px-10 text-white border-2 border-temp hover:bg-temp w-[150px]"
             data-aos="zoom-in-up"
           >
-            <Link href="/" >Submit</Link>
+            <Link href="/successful" >Submit</Link>
           </button>
         </form>
       </div>
