@@ -52,13 +52,13 @@ const WorkArray: ImageList[] = [
 ];
 
 const WorkList = () => {
-  useEffect(() => {
-    AOS.init({
-      duration: 500,
-      once: true,
-      easing: 'ease-in-out',
-    })
-  });
+  // useEffect(() => {
+  //   AOS.init({
+  //     duration: 500,
+  //     once: true,
+  //     easing: 'ease-in-out',
+  //   })
+  // });
   return (
     <div>
       <section className="grid grid-cols-1 justify-center align-middle gap-10 md:px-[8%] px-4 bg-white py-[50px]">
@@ -67,7 +67,7 @@ const WorkList = () => {
             key={index}
             className="w-[100%] md:px-[10%] flex flex-col justify-start align-middle my-[20px]"
           >
-            <div className="w-full h-[350px] border relative overflow-hidden" data-aos="zoom-in-up">
+            <div className="w-full h-[350px] border relative overflow-hidden">
               <Image
                 src={work.url}
                 alt="websitedesings.png"
@@ -76,7 +76,7 @@ const WorkList = () => {
                 className="w-[100%] h-[100%] object-cover transition duration-300 hover:scale-150"
               />
             </div>
-            <div className="mt-6" data-aos="zoom-in-up">
+            <div className="mt-6">
               <Link href={work.website} className="text-temp text-[2em] capitalize font-header">{work.header}</Link>
               <h3 className="text-[1.2em]">{work.text}</h3>
             </div>
