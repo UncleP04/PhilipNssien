@@ -1,9 +1,14 @@
 'use client'
 import React, {useEffect} from "react";
-import Image from "next/image";
+import Image, { StaticImageData } from "next/image";
 import Link from "next/link";
 import 'aos/dist/aos.css';
-import AOS from 'aos';
+// import One from '/../public/Images/Pro1.png';
+// import Two from '/../public/Images/Pro2.png';
+// import Three from '/../public/Images/Pro3.png';
+// import Four from '/../public/Images/Pro4.png';
+// import Five from '/../public/Images/Pro5.png';
+// import Six from '/../public/Images/Pro6.png';
 
 interface ImageList {
   url: string;
@@ -14,13 +19,13 @@ interface ImageList {
 
 const WorkArray: ImageList[] = [
   {
-    url: "/../public/Images/Pro1.png",
+    url:'/../public/Images/Pro1.png',
     website: 'https://wecruitme.com/',
     header: "Wecruitme Website",
     text: "A global Human Resource and Job agency",
   },
   {
-    url: "/../public/Images/Pro2.png",
+    url: '/../public/Images/Pro2.png',
     website: 'https://officialrepublic.onrender.com/',
     header: "officialURepobliuc",
     text: "A web3 Marketing agency",
@@ -72,7 +77,7 @@ const WorkList = () => {
                 src={work.url}
                 alt="websitedesings.png"
                 width={700}
-                height={200}
+                height={300}
                 className="w-[100%] h-[100%] object-cover transition duration-300 hover:scale-150"
               />
             </div>
