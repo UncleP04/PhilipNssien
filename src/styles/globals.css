@@ -6,17 +6,18 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
- background: #000;
+:root {
+  --header-font: 'Acme', sans-serif;
+  --text-font: 'Ysabeau Infant', sans-serif;
 }
 
-@layer base {
-  html {
-    font-family: DM Sans, system-ui, sans-serif;
-  }
+body {
+  font-family: var(--text-font);
+  background: #000;
 }
-h1, button, Link{
-  font-family: 'Acme', sans-serif;
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--header-font);
 }
 
 .navbar{

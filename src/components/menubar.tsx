@@ -13,7 +13,9 @@ const MenuIconBar: React.FC = () => {
   return (
     <div>
       <nav className="flex w-[100%] bg-transparent justify-between align-middle py-[3%] px-[6%] relative">
+        <Link href='/'>
         <h1 className="text-white font-semibold text-[20px] font-header">PN.</h1>
+        </Link>
         <button
           type="button"
           onClick={toggleMenu}
