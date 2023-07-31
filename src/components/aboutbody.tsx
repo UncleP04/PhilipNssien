@@ -7,7 +7,7 @@ const AboutBody = () => {
     <div className="bg-white">
       <div className="p-4">
         <h1 className="text-black text-[3em] font-bold">
-          These are what I'm <br />
+          These are what Im <br />
           great at.
         </h1>
       </div>
@@ -65,7 +65,7 @@ const AboutBody = () => {
               </h3>
               <p className="text-[20px] mt-2 leading-10">
                 Armed with an in-depth understanding of TypeScript. Leveraging
-                TypeScript's powerful features, static typing to JavaScript,
+                TypeScripts powerful features, static typing to JavaScript,
                 allowing developers to declare types for variables, enabling the
                 creation of reusable components or functions that can work with
                 different types
@@ -184,7 +184,7 @@ const AboutBody = () => {
           </h3>
           <p className="text-[18px] mt-2 leading-10">
             Working well within a team environment involves being respectful,
-            supportive, and open to others' opinions and ideas. Good teamwork
+            supportive, and open to othersopinions and ideas. Good teamwork
             results in increased productivity and morale.
           </p>
         </div>

@@ -61,14 +61,14 @@ const ContactComponent: React.FC = () => {
       <div className="mb-10 md:mb-0">
         <div className="md:w-[50%]">
           <h1 className="text-white text-[3em] font-bold">
-            Drop a mail, Let's build together
+            Drop a mail, Lets build together
           </h1>
           <h3 className=" text-primary px-8 py-1 border-4 border-l-primary border-t-0 border-b-0 border-r-0 tracking-[4px] my-[10px]">
             Contact Me.
           </h3>
           <p className="text-white text-[20px] my-7">
             Ready to kickstart your project? <br /> You have two convenient
-            options to get started. <br /> Simply fill out the form, and I'll
+            options to get started. <br /> Simply fill out the form, and Ill
             be in touch
             promptly, or mail out.
           </p>
