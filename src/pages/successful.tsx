@@ -19,7 +19,7 @@ const Success: React.FC = () => {
             />
           </div>
           <div className="text-center">
-            <span className="text-green-800 font-semibold font-header text-[2em] md:text-[3em] flex justify-center align-middle">
+            <span className="flex justify-center align-middle items-center text-center">
                 <Image 
                     src={Checked}
                     alt="check.png"
@@ -27,7 +27,7 @@ const Success: React.FC = () => {
                     height={300}
                     className="w-[70px] h-[70px]"
                 />
-              Sent Successfully
+                <h1 className="text-green-800 font-semibold font-header text-[2em] md:text-[3em]">Sent Successfully</h1>
             </span>
             <Link
               href="/"
