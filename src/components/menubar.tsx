@@ -38,8 +38,8 @@ const MenuIconBar: React.FC = () => {
         )}
       </button>
         <div className={`${isOpen ? 'h-[110vh] top-0' : 'h-0 opacity-0 top-[-100%]'} fixed flex justify-center items-center left-0 list-none bg-primary navbar z-10`}>
-            <div className="w-[100%] md:flex block md:flex-row items-center justify-center">
-                <li className={`${isOpen ? 'scale-100' : 'scale-0'} w-[50%] list-none flex flex-col justify-center align-middle gap-[50px] font-header`}>
+            <div className="w-[100%] md:flex block md:flex-row items-center justify-center align-middle">
+                <li className={`${isOpen ? 'scale-100' : 'scale-0'} md:w-[50%] list-none flex flex-col justify-center align-middle self-center items-center gap-[50px] font-header`}>
                     <Link href='/' className={`${isOpen ? 'scale-100 duration-500' : 'scale-0'} text-[2em] font-semibold text-black text-center self-center hover:border-b-4 border-b-black`}>Home</Link>
                     <Link href='/projects' className={`${isOpen ? 'scale-100 duration-700' : 'scale-0'} text-[2em] font-semibold text-black text-center self-center hover:border-b-4 border-b-black`}>ProjectS</Link>
                     <Link href='/about' className={`${isOpen ? 'scale-100 duration-700' : 'scale-0'} text-[2em] font-semibold text-black text-center self-center hover:border-b-4 border-b-black`}>About</Link>
