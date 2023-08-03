@@ -3,10 +3,16 @@ import React, {useEffect} from "react";
 import Image, { StaticImageData } from "next/image";
 import Link from "next/link";
 import 'aos/dist/aos.css';
+import One from '../../public/Images/ProOne.png'
+import Two from '../../public/Images/ProTwo.png'
+import Three from '../../public/Images/ProThree.png'
+import Four from '../../public/Images/ProFour.png'
+import Five from '../../public/Images/Profive.png'
+import Six from '../../public/Images/ProSix.png'
 
 interface ImageList {
   id: number;
-  url: string;
+  url: StaticImageData;
   alt: string;
   website: string;
   header: string;
@@ -16,7 +22,7 @@ interface ImageList {
 const WorkArray: ImageList[] = [
   {
     id: 1,
-    url:'/../public/Images/proOne.png',
+    url:One,
     alt: 'image1.png',
     website: 'https://wecruitme.com/',
     header: "Wecruitme Website",
@@ -24,7 +30,7 @@ const WorkArray: ImageList[] = [
   },
   {
     id: 2,
-    url: '/../public/Images/ProTwo.png',
+    url: Two,
     alt: 'image2.png',
     website: 'https://officialrepublic.onrender.com/',
     header: "officialURepobliuc",
@@ -32,7 +38,7 @@ const WorkArray: ImageList[] = [
   },
   {
     id: 3,
-    url: "/../public/Images/ProThree.png",
+    url: Three,
     alt: 'image3.png',
     website: 'https://bartcash.netlify.app/',
     header: "BartCash",
@@ -40,7 +46,7 @@ const WorkArray: ImageList[] = [
   },
   {
     id: 4,
-    url: "/../public/Images/ProFour.png",
+    url: Four,
     alt: 'image4.png',
     website: 'https://la-boutique.vercel.app/',
     header: "La-Boutique",
@@ -48,7 +54,7 @@ const WorkArray: ImageList[] = [
   },
   {
     id: 5,
-    url: "/../public/Images/ProFive.png",
+    url: Five,
     alt: 'image5.png',
     website: 'https://airbnbs.vercel.app/',
     header: "airbnb",
@@ -56,7 +62,7 @@ const WorkArray: ImageList[] = [
   },
   {
     id: 6,
-    url: "/../public/Images/ProSix.png",
+    url: Six,
     alt: 'image6.png',
     website: 'https://creednft.vercel.app/',
     header: "CreedNft Website",
